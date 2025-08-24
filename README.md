@@ -9,8 +9,8 @@ The main goal of this project is to understand the basics of web development and
 - Basic HTML structure (`<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`)  
 - Headings, paragraphs, and text formatting  
 - Links and images  
-- Lists (ordered & unordered)  
-- Tables and forms (if inclu  
+- Lists (ordered & unordered)
+- Tables and forms
 
 ---
 
