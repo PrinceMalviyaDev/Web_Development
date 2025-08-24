@@ -10,7 +10,7 @@ The main goal of this project is to understand the basics of web development and
 - Headings, paragraphs, and text formatting  
 - Links and images  
 - Lists (ordered & unordered)  
-- Tables and forms (if included)  
+- Tables and forms (if inclu  
 
 ---
 
