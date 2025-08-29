@@ -1,0 +1,70 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learning Forms">
+    <meta name="author" content="Prince Malviya">
+    <title>Forms: let's learn it!</title>
+</head>
+
+<body>
+    <h1>Practice Form</h1>
+    <form action="post">
+        <div>
+            <label for="username">Enter your username</label>
+            <input type="text" id="username" name="username" placeholder="Ex: Aman_Gupta">
+        </div>
+
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+        </div>
+
+        <div>
+            <label for="newsletter">Subscribed</label>
+            <input type="checkbox" id="newsletter" name="preferrence" unchecked>
+            <label for="notifications">Notifications</label>
+            <input type="checkbox" id="notifications" name="preferrence" unchecked>
+        </div>
+
+        <div>
+            <label for="cars">Select a car.</label>
+            <select name="cars" id="cars">
+                <option value="volvo">Volvo</option>
+                <option value="maruti">Maruti</option>
+                <option value="audi">Audi</option>
+                <option value="ford">Ford</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="bio">Bio:</label>
+            <input type="textarea" id="bio" name="bio" cols="60" rows="30"
+                placeholder="Write about yourself..."></input>
+        </div>
+
+        <div>
+            <label for="email">Enter your e-mail:</label>
+            <input type="email" id="email" name="email" placeholder="xyz@gmail.com">
+        </div>
+
+        <div>
+            <label for="number">Enter Your Number:</label>
+            <input type="tel" id="number" name="number" placeholder="Enter 10-digit mobile number" pattern="[0-9]{10}"
+                maxlength="10" minlength="10">
+        </div>
+
+        <div>
+            <button>Click me</button>
+        </div>
+
+    </form>
+
+</body>
+
+</html>
