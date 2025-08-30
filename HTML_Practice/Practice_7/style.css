@@ -1,0 +1,19 @@
+.featured{
+    border: 5px solid maroon;
+    padding: 10px;
+    background-color: lightgrey;
+    display: inline-block
+}
+h3{
+    text-align: center;
+    color:rgb(235, 239, 235);
+    background-color: black;
+    padding:5px;
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+}
+.audio-section h3{
+    display:inline-block;
+}
