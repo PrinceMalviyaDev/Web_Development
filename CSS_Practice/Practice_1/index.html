@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+
+        /* Element Selector */
+        div{
+            background-color: rgb(238, 114, 114);
+        }
+
+        /* Class Selector */
+        .red{
+            background-color: rgb(193, 193, 253);
+        }
+
+        /* ID Selector */
+        #green{
+            color: rgb(11, 236, 11);
+        }
+
+        /* child selector */
+        div > h3{
+            color: rgb(255, 0, 0);
+            background-color: rgb(255, 255, 0);
+        }
+
+        /* Descendent Selector */
+        div p{
+            background-color: rgb(49, 69, 69);
+        }
+
+        /* Universal Selector */
+        * {
+            margin:0;
+            padding:0;
+        }
+
+        /* Pseudo Class Selector */
+        div:hover{
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="red">
+        I am a div
+        <h3>I am a paragraph</h3>
+    </div>
+    <div id="green">
+        I am a div
+        <article>
+            <p>I am a Descendent</p>
+        </article>
+    </div>
+</body>
+</html>
