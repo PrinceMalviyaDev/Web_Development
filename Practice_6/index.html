@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Handling in HTML</title>
+</head>
+<body>
+    <video src="video.mp4" controls width="200" autoplay loop muted poster="Screenshot 2025-08-25 173411.png"></video>
+    <audio src="audio.mp3" controls autoplay loop muted preload="metadata"></audio>
+    <!-- preload is one of the most important attribute of audio tag, it's value can be none, metadata or auto -->
+    <iframe src="https://www.mechknow.com/mission.php" width="300" height="200" frameborder="100" allowfullscreen></iframe>
+    <svg width="250" height="100" style="border:1px solid black;">
+        <polyline points="20,20 80,60 140,20 200,80" fill="none" stroke="blue" stroke-width="3"/>
+    </svg>
+    <svg width="250" height="200" style="border:1px solid black;">
+      <path d="M20 80 C 40 10, 180 10, 200 80" 
+            stroke="red" fill="transparent" stroke-width="3" />
+    </svg>
+    <svg width="300" height="100" style="border:1px solid black;">
+      <text x="20" y="60" font-size="40" fill="purple">Prince Malviya</text>
+    </svg>
+</body>
+</html>
