@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Student Learning Form</h2>
+    <form action="#" method="post">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email">
+        </div>
+        <div>
+            <label for="password">password</label>
+            <input type="password" id="password" name="password" placeholder="Enter Your Password">
+        </div>
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob">
+        </div>
+        <div>
+            <label for="number">Phone Number</label>
+            <input type="number" id="number" name="number" placeholder="Enter Your Number">
+        </div>
+        <div>
+            <label>Gender</label>
+            <div>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>                
+            </div>
+            <div>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+        </div>
+        <div>
+            <label for="">Interests</label>
+            <div>
+                <input type="checkbox" id="sports" name="interests" value="sports">
+                <label for="sports">Sports</label>
+            </div>
+            <div>
+                <input type="checkbox" id="music" name="interests" value="music">
+                <label for="music">Music</label>
+            </div>
+            <div>
+                <input type="checkbox" id="academics" name="interests" value="academics">
+                <label for="academics">Academics</label>
+            </div>
+        </div>
+        <div>
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="india">India</option>
+                <option value="china">China</option>
+                <option value="america">America</option>
+                <option value="russia">Russia</option>
+            </select>
+        </div>
+        <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Write something..."></textarea>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+        <div>
+            <button>Download as PDF</button>
+        </div>
+    </form>
+</body>
+</html>
