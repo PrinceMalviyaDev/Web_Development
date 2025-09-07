@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        body{
+            background-color: yellow;
+        }
+        @media screen and (orientation:landscape){
+            body{
+                border:10px solid rgb(33, 51, 6);
+            }
+        }
+        @media only screen and (max-width:200px){
+            body{
+                background-color: steelblue;
+            }
+            .boxes{
+                flex-direction:column;
+            }
+        }
+        .boxes{
+            display:flex;
+        }
+        .box{
+            width:200px;
+            height:200px;
+            background-color: salmon;
+            margin:5px;
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        I am a Yellow Guy
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
