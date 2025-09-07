@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        .box:nth-child(odd) {
+            background-color: bisque;
+        }
+
+        .box:nth-child(2) {
+            color: darkgreen;
+        }
+
+        .box:nth-last-child(2) {
+            font-weight: 600;
+        }
+
+        .boxes::before {
+            content: "I am an starting note";
+            color: brown;
+        }
+
+        .boxes::after {
+            content: "I am an ending note";
+            color: blueviolet;
+        }
+
+        ::selection {
+            background-color: black;
+            color: aqua;
+        }
+
+        .box::first-letter {
+            font-size: 50px;
+            color: chocolate;
+            text-transform: lowercase;
+        }
+
+        .box {
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">I am box 1</div>
+        <div class="box">I am box 2</div>
+        <div class="box">I am box 3</div>
+    </div>
+</body>
+
+</html>
