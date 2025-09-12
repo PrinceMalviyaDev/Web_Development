@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            border:2px solid black;
+            width:80vw;
+            height:50vh;
+            display:grid;
+
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            grid-template-columns: repeat(4, 40px);
+            /* grid-template-columns: repeat(4, minmax(100px, 1fr)); */
+
+            grid-template-rows: repeat(2, 40px);
+
+            /* row-gap:20px;
+            column-gap:20px; */
+            gap:20px;
+
+            justify-items: center;
+            align-items: center;
+
+            /* The justify content and align content in grid is used to center the entire grid */
+            /* justify-content:center; 
+            align-content:center; */
+
+            /* We can use Place Center to center the center the grid instead of writing justify content & align content */
+            place-content: center;
+        }
+        .item{
+            border:2px solid red;
+            height:50px;
+            width: 50px;
+        }
+        .item-1{
+            justify-self: start;
+            align-self: start;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
