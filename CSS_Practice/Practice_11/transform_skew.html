@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Transform</title>
+    <title>tranform:skew</title>
     <style>
         .container{
             width:100vw;
@@ -27,26 +27,22 @@
             transition:all 0.3s ease;
         }
         .box1:hover{
-            transform:scale(1.5);
+            transform:skew(45deg);
         }
         .box2:hover{
-            transform:scaleX(1.5);
+            transform:skewX(45deg);
         }
         .box3:hover{
-            transform:scaleY(1.5);
+            transform:skewY(45deg);
         }
-        .box4:hover{
-            transform:scaleZ(1.5);
-        }
-        
+
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="box box1">scale(1.5)</div>
-        <div class="box box2">scaleX(1.5)</div>
-        <div class="box box3">scaleY(1.5)</div>
-        <div class="box box4">scaleZ(1.5)</div>
+        <div class="box box1">skew(45deg)</div>
+        <div class="box box2">skewX(45deg)</div>
+        <div class="box box3">skewY(45deg)</div>
     </div>
 </body>
 </html>
