@@ -1,0 +1,38 @@
+.container{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap: 10px;
+}
+.item{
+    width: 95vw;
+    height: 24vh;
+    border:1px solid black;
+    background-color: gray;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    padding:10px;
+}
+.block{
+    border:1px solid black;
+    height:95%;
+    width:30%;
+    background-color:darkslategray ;
+}
+.logo{
+    height:95%;
+    flex:1;
+    border:1px solid black;
+    background-color: beige;
+}
+.links{
+    height:95%;
+    margin-left:10px;
+    width:30%;
+    border:1px solid black;
+    background-color: beige;
+}
