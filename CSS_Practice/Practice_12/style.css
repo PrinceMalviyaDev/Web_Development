@@ -1,0 +1,84 @@
+*{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            background-color: darkseagreen;
+        }
+        .container{
+            width:100vw;
+            height:100vh;
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            align-items:center;
+            align-content: center;
+            /* perspective:300px; */
+            gap:50px;
+            padding:50px;
+        }
+        .item{
+            width:120px;
+            height:100px;
+            color:white;
+            background-color:blue;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            transition:all 1s ease;
+            border-radius:5px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        .wrapper{
+            perspective:200px;
+            background-color:white;
+            border-radius:5px;
+        }
+        .item1:hover{
+            transform:rotate(45deg);
+        }
+        .item2:hover{
+            transform:rotateX(45deg);
+        }
+        .item3:hover{
+            transform:rotateY(45deg);
+        }
+        .item4:hover{
+            transform:scale(0.7);
+        }
+        .item5:hover{
+            transform:scaleX(0.7);
+        }
+        .item6:hover{
+            transform:scaleY(0.7);
+        }
+        .item7:hover{
+            transform:skew(40deg);
+        }
+        .item8:hover{
+            transform:skewX(-40deg);
+        }
+        .item9:hover{
+            transform:skewY(40deg);
+        }
+        .item10:hover{
+            transform:skew(20deg, 20deg);
+        }
+        .item11:hover{
+            transform:translate(50px);
+        }
+        .item12:hover{
+            transform:translateX(-50px);
+        }
+        .item13:hover{
+            transform:translateY(50px);
+        }
+        .item14:hover{
+            transform:translate(50px, 50px);
+        }
+        .item15:hover{
+            transform:translateZ(50px);
+        }
+        .item16:hover{
+            transform:translate3d(0px,30px,50px);
+        }
