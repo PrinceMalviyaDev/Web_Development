@@ -239,3 +239,18 @@ ul button:hover {
     font-size:18px;
     text-align:center;
 }
+.section4 .wrapper .info{
+    padding-top:80px;
+}
+.section4 .wrapper .info h1{
+    margin:15px 0px 10px 0px;
+    font-weight:300;
+}
+.section4 .wrapper .info p{
+    line-height: 35px;
+    font-size: large;
+}
+.section4 .wrapper .info a{
+    text-decoration: none;
+    color:#00b6d1;
+}
