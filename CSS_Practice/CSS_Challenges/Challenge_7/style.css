@@ -283,7 +283,7 @@ ul button:hover {
     display: flex;
     gap: 40px;
     justify-content: center;
-    padding:100px 60px 100px 60px;
+    padding:100px 60px 50px 60px;
 }
 .section5 .list{
     width:20vw;
@@ -329,4 +329,11 @@ ul button:hover {
     border-radius: 8px;
     background-color: #00b6d1;
     cursor:pointer;
+}
+
+footer{
+    width:80vw;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
 }
