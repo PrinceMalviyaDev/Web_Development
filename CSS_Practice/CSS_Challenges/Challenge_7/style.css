@@ -25,7 +25,7 @@ header ul {
 header ul li {
     display: flex;
     font-size: 17.5px;
-    padding: 0px 20px;
+    padding: 0px 16px;
     align-items: center;
     transition: all 0.6s ease;
 }
@@ -178,7 +178,7 @@ ul button:hover {
 
 .section4 {
     background-color: #222;
-    width: 100vw;
+    width: 98vw;
     height: 100vh;
 }
 
@@ -189,10 +189,13 @@ ul button:hover {
     color: white;
     /* border:2px solid white; */
     height: 100%;
+    display:flex;
+    flex-wrap:wrap;
 }
 
 .section4 .wrapper .invite {
     display: flex;
+    flex-wrap:wrap;
     justify-content: space-evenly;
     margin-top: 40px;
 }
@@ -201,6 +204,7 @@ ul button:hover {
 .invite .input {
     width: 50%;
     display: flex;
+    flex-wrap:wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -283,7 +287,7 @@ ul button:hover {
     display: flex;
     gap: 40px;
     justify-content: center;
-    padding:100px 60px 50px 60px;
+    padding:100px 60px 70px 60px;
 }
 .section5 .list{
     width:20vw;
@@ -334,6 +338,34 @@ ul button:hover {
 footer{
     width:80vw;
     margin:auto;
+    margin-bottom: 60px;
     display:flex;
     justify-content:space-between;
+}
+footer .left{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    padding-left:20px;
+}
+footer .left p{
+    font-size: 14px;
+}
+
+footer .right{
+    padding-right:20px;
+    padding-top:10px;
+    display:flex;
+}
+
+footer .right a{
+    color:black;
+    font-size: 28px;
+    text-decoration: none;
+    padding:6px 6px 6px 6px;
+    transition:all 0.3s ease;
+}
+
+footer .right a:hover{
+    font-size:29px;
 }
