@@ -101,17 +101,18 @@ ul button:hover {
 .section2 h1 {
     display: flex;
     align-items: center;
+    font-size: 26px;
+    font-weight:400;
 }
 
 .section2 img {
     margin-right: 20px;
+    margin-top: 10px;
     border: 2px solid black;
     border-radius: 50%;
 }
-
-.section2 .below span {
-    align-self: center;
-    padding-top: 9px;
+.section2 span{
+    padding-top:8px;
 }
 
 .section3 {
