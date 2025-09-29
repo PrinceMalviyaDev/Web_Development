@@ -251,6 +251,10 @@ ul button:hover {
     color: white;
     font-weight: 700;
     font-size: 17px;
+    transition: all 0.4s ease;
+}
+.section4 .wrapper .invite .input button:hover{
+    background-color: #08aac2;
 }
 
 .section4 .wrapper .invite .join h1 {
