@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Learn Ball Bounce Animation in CSS">
+        <title>Ball Bounce Animation</title>
+    </head>
+    <style>
+        .container{
+            display:flex;
+            justify-content:flex-start;
+            align-items:flex-end;
+            width:80vw;
+            height:80vh;
+            border:1px solid black;
+            background-color: bisque;
+        }
+
+        .ball-wrapper {
+            animation: ball-animateX 6s linear infinite alternate;
+        }
+
+        .ball{
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            width:60px;
+            height:60px;
+            background-color: brown;
+            border-radius: 50%;
+            animation: ball-animateY 0.4s cubic-bezier(0.35, 0.56, 0.43, 0.9) infinite alternate;
+            
+        }
+        @keyframes ball-animateY{
+            from{
+                transform: translateY(0);
+                height:40px;
+            }
+            to{
+                transform: translateY(-200px);
+                height:70px;
+            }
+        }
+        @keyframes ball-animateX{
+            from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(calc(80vw - 60px));
+            }
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="ball-wrapper">
+                <div class="ball"></div>
+            </div>
+        </div>
+    </body>    
+</html>
