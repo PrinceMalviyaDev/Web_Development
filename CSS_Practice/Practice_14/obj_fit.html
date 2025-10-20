@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object-fit and object-cover</title>
+    <style>
+        .container{
+            width:200px;
+            height:250px;
+            border:1px solid black;
+            background-color: antiquewhite;
+        }
+        img{
+            border:1px solid black;
+            background-color: white;
+            width:150px;
+            height:200px;
+            object-fit: cover;
+            /* it crops the image and then it fits the image into the container.*/
+            
+            /* object-fit:contain; */
+            /* it fits the complete image in the original ratio but does not cover the container entirely */
+
+            object-position: center;
+            /* it positions the image in the center of the container */;
+
+            /* object-position: top left; */
+            /* it positions the image according to the x and y axis given */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="image.jpeg" alt="image" width="300">
+    </div>
+</body>
+</html>
