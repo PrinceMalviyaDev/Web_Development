@@ -1,0 +1,13 @@
+body{
+    background-color: pink;
+}
+
+h1{
+    columns: blue;
+    background-color: yellow;
+}
+
+button{
+    background-color: blue;
+    color:white;
+}
