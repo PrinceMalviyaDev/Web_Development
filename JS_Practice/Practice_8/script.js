@@ -39,7 +39,7 @@ console.log(document.querySelector(".box").hasAttribute("style"));  //returns tr
 
 console.log(document.querySelector(".box").getAttribute("style"));  //returns the style i.e.,display:flex
 
-document.querySelector(".box").setAttribute("style", "display:grid");  //changes the style to display:grid
+document.querySelector(".box").setAttribute("style", "display:grid");  // created the style and assigned it display:grid
 
 console.log(document.querySelector(".box").getAttribute("style"));  //returns the style i.e., display:grid
 
