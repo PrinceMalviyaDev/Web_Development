@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.card{
+    background-color: black;
+    color:white;
+    display:flex;
+    gap:5px;
+    width:90vw;
+    margin:auto;
+    border:1px solid gray;
+    padding:10px;
+    height:100px;
+    overflow:hidden;
+    font-family: roboto, sans-sarif, poppins;
+}
+
+.image img{
+    height:100%;
+    border-radius: 5px;
+}
+
+.image{
+    position:relative;
+}
+
+.image span{
+    position:absolute;
+    top:80px;
+    right:5px;
+    padding:3px;
+    background-color: black;
+    border-radius:3px;
+    font-size:x-small;
+}
+
+.details .title{
+    margin:3px 0px 10px 0px;
+}
+
+.details .extra-details{
+    font-size: x-small;
+    display:flex;
+    gap:10px;
+}
