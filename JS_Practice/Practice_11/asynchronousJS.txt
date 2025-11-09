@@ -3,13 +3,16 @@
     # Synchronous:
 
         -> Synchronous means the code runs in a particular sequence of instructions given in the program.
+
         -> Each Instruction waits for the previous instruction to complete its execution.
 
 
     # Asynchronous:
 
         -> Due to synchronous programming, sometimes imp instructions get blocked due to some previous instructions, which causes a delay in the UI.
+
         -> Asynchronous code execution allows to execute next instruction immediately and doesn't block the flow.
+
 
 
 => Callbacks:
@@ -21,3 +24,36 @@
         -> Callback Hell : Nested callbacks stacked below one another forming a pyramid structure. (Pyramid of Doom)
 
         -> This style of programming becomes difficult to understand & manage.
+
+
+
+=> Promises:
+
+    -> Promise is for "eventual" completion of task. It is an object in JS.
+
+    -> It is a solution to callback Hell.
+
+    eg: 
+        let promise = new Promise((resolve, reject)=>{.....});
+                                      |_______|
+                                          |
+                                function with 2 handlers
+
+
+    * resolve & reject are callbacks provided by JS *
+
+    -> The promises have 3 states:
+
+        (1) pending - the result is undefined
+
+        (2) fulfilled(resolved) - the result is a value(fulfilled)   resolve(result)
+
+        (3) rejected - the result is an error object   reject(error)
+
+
+=> How Promises are used??
+
+    -> .then()  &  .catch()
+
+            promise.then((res) => {....})
+            promise.catch((err) => {....})
