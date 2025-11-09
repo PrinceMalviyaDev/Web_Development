@@ -52,10 +52,14 @@
 
 
 
-=> How Promises are used??
+    -> How Promises are used??
 
-    -> .then()  &  .catch()
+        # .then()  &  .catch()
 
             (1) promise.then((res) => {....})  //executes only when the promise is "fulfilled".
 
             (2) promise.catch((err) => {....})  //executes only when the promise is "rejected".
+
+        # We do promise chaining using ".then" & ".catch" to counter "Callback Hell".
+
+
