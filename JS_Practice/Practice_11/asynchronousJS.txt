@@ -70,3 +70,20 @@
         eg:  async function myFunc(){....}
 
     -> await pauses the execution of its surrounding async function until the promise is settled.
+
+
+=> IIFE : Immediately Invoked Function Expression
+
+    -> IIFE is a function that is called immediatly as soon as it is defined.
+
+        (1) (function(){
+            .........
+            })();
+
+        (2) (()=>{
+            .........
+            })();
+        
+        (3) (async ()=>{
+            .........
+            })();
