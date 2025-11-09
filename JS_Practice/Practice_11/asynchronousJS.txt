@@ -51,9 +51,11 @@
         (3) rejected - the result is an error object   reject(error)
 
 
+
 => How Promises are used??
 
     -> .then()  &  .catch()
 
-            promise.then((res) => {....})
-            promise.catch((err) => {....})
+            (1) promise.then((res) => {....})  //executes only when the promise is "fulfilled".
+
+            (2) promise.catch((err) => {....})  //executes only when the promise is "rejected".
