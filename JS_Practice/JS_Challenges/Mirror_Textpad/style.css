@@ -1,0 +1,14 @@
+input{
+    width:97vw;
+    height:20px;
+    border:2px solid black;
+}
+
+#mirror{
+    width:97vw;
+    height:50vh;
+    border:2px solid black;
+    margin-top:5px;
+    background-color: black;
+    color:yellow;
+}
