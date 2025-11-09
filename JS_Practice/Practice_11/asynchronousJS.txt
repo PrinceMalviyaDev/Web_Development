@@ -63,3 +63,10 @@
         # We do promise chaining using ".then" & ".catch" to counter "Callback Hell".
 
 
+=> Async-Await:
+
+    -> async fucntion always returns a promise.
+
+        eg:  async function myFunc(){....}
+
+    -> await pauses the execution of its surrounding async function until the promise is settled.
