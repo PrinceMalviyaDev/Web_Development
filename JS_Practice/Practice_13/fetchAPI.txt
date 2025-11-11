@@ -1,0 +1,52 @@
+# API (Application Programming Interface):
+
+    -> API is like a system or a server or a website created by someone else, and we can "Request" some data from it and in return the API sends us the "Response".
+
+    -> The APIs work on Request<-->Response cycle.
+
+
+# Fetch API
+
+    -> The Fetch API provides an interface for fetching(sending/receiving) resources.
+
+    -> It uses Request and Response objects.
+
+    -> The fetch() method is used to fetch a resource(data).
+
+    eg: 
+        let promise = fetch(url, [options]);
+
+    -> Using "Fetch API" simply means using JS's fetch() method.
+
+    -> Whe we don't pass any option in fetch() method, then the fetch method creates a particular type of request called "GET"
+
+    -> The soul purpous of GET request is to get(return) some data from somewhere(API or Server).
+
+
+# Understanding Terms:
+
+    -> AJAX is Asynchronous JavaScript and XML  (used in older web apps, data was sent in XML Format).
+
+    -> JSON is JavaScript Object Notation (AJAJ : Asynchronous JavaScript and JSON)
+
+    -> json() method: returns a second promise that resolves with the result of parsing the response body text as JSON. (Input is JSON, output is JS Object). It is also an Asynchronous method.
+
+
+# Data Format conversion:
+
+    -> Whenever we send a request to API, we get some Response which is in JSON format, we need to convert this into "JS Object" format.
+
+
+# Request & Response:
+
+    -> HTTP Verbs: verbs are basically the method by which we are sending or receiving the data, they can be GET, HEAD, POST, PUT, DELETE, CONNECT, OPTIONS, TRACE, PATCH.
+
+    -> Response Status Codes:  
+
+        (1) Informational responses ( 100 - 199 )
+        (2) Successful responses ( 200 - 299 )
+        (3) Redirection messages ( 300 - 399 )
+        (4) Client erro responses ( 400 - 499 )
+        (5) Server error responses ( 500 - 599 )
+
+    -> HTTP response headers also contain details about the responses, such as content type, HTTP status code etc.
