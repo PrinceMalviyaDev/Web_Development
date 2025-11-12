@@ -5,6 +5,7 @@ const btn = document.querySelector("form button");
 const fromCurr = document.querySelector(".from select");
 const toCurr = document.querySelector(".to select");
 const msg = document.querySelector(".msg");
+const exchange = document.querySelector(".dropdown i");
 
 
 for(let select of dropdowns){
@@ -57,4 +58,12 @@ btn.addEventListener("click", (evt) => {
 
 window.addEventListener("load", ()=>{
     updateExchangeRate();
+});
+
+exchange.addEventListener("click", () => {
+    let temp = fromCurr.value;
+    fromCurr.value = toCurr.value;
+    toCurr.value = temp;
+    document.querySelector(".img1").src = `https://flagsapi.com/${countryList[fromCurr.value]}/flat/64.png`;
+    document.querySelector(".img2").src = `https://flagsapi.com/${countryList[toCurr.value]}/flat/64.png`;
 });
