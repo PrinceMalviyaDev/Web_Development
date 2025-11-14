@@ -14,3 +14,31 @@
     -> The type of "Prototype" is a reference to an object (can be null too).
 
     -> *If object & prototype have same method, object's method will be used.
+
+
+# Classes in JS:
+
+    -> Class is a program-code template for creating objects.
+
+    -> Those objects will have some state(variables) & some behavior (functions) inside it.
+
+    -> These objects are of types of their respective classes.
+
+    -> All attributes and behaviors of the class will be in object inside the prototype.
+
+
+# constructor in JS:
+
+    -> constructor() method is:
+        ~ automatically invoked by new
+        ~ initializes the object
+
+    -> eg:
+            class MyClass {
+                constructor() {....}
+                myMethod() {....}
+            }
+
+    -> the "new" keyword searches for the constructor inside the class but if it doesn't find any, it automatically creates one for the class.
+
+    -> the objects are helpful when it comes to initializing the object.
