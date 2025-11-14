@@ -1,0 +1,16 @@
+            
+        ----> Objects and Classes <----
+        
+# Prototypes in JS:
+
+    -> A JavaScript object is an entity having state and behavior (properties and method).
+
+    -> JS objects have a special by default property called "Prototype", which is a reference to an object.
+
+    -> This "Prototype" also has some properties and behavior.
+
+    -> We can set prototype using __proto__
+
+    -> The type of "Prototype" is a reference to an object (can be null too).
+
+    -> *If object & prototype have same method, object's method will be used.
