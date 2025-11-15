@@ -5,13 +5,13 @@
 
     -> A JavaScript object is an entity having state and behavior (properties and method).
 
-    -> JS objects have a special by default property called "Prototype", which is a reference to an object.
-
-    -> This "Prototype" also has some properties and behavior.
+    -> JS objects have a special by default property called "Prototype".
+    
+    -> In JavaScript, a prototype is an object that is automatically associated with every function and object. It acts as a mechanism for inheritance, allowing objects to access properties and methods that are not directly defined on them.
 
     -> We can set prototype using __proto__
 
-    -> The type of "Prototype" is a reference to an object (can be null too).
+    -> The type of "Prototype" can either be a reference to another object or it can be null.
 
     -> *If object & prototype have same method, object's method will be used.
 
@@ -52,5 +52,3 @@
             super(args);  //calls Parent's constructor
 
             super.parentMethod(args);
-
-    -> 
