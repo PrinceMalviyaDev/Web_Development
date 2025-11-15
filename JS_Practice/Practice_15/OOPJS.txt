@@ -42,3 +42,15 @@
     -> the "new" keyword searches for the constructor inside the class but if it doesn't find any, it automatically creates one for the class.
 
     -> the objects are helpful when it comes to initializing the object.
+
+
+# super Keyword:
+
+    -> The super keyword is used to call the constructor of its parent class to access the parent's properties and methods.
+
+    -> eg:
+            super(args);  //calls Parent's constructor
+
+            super.parentMethod(args);
+
+    -> 
