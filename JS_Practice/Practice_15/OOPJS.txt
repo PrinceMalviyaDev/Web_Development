@@ -52,3 +52,30 @@
             super(args);  //calls Parent's constructor
 
             super.parentMethod(args);
+
+
+# Getters & Setters: 
+    
+    Getters and Setters are special methods that allow you to access and update object properties in a controlled way.
+
+    (Q) Why do we need them??
+
+    Ans : To control how a value is accessed or changed.
+          To validate data before storing it.
+          To create computed properties.
+          To make code more clean and encapsulated.
+
+    => Getters:
+        
+        -> A getter is used to read a property’s value.
+        -> It looks like a property, but it runs a function.
+
+        -> Benefit: The value is read like a normal property, but behind the scenes, logic runs.
+
+    => Setters: 
+
+        -> A setter is used to modify a property’s value, with validation if needed.
+
+        -> Benefit: Calls the setter function internally, but looks like a simple assignment.
+
+    Getters allow controlled reading of object properties, and setters allow controlled updating of properties. They provide encapsulation while still using a clean property-like syntax.
