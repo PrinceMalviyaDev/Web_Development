@@ -79,3 +79,11 @@
         -> Benefit: Calls the setter function internally, but looks like a simple assignment.
 
     Getters allow controlled reading of object properties, and setters allow controlled updating of properties. They provide encapsulation while still using a clean property-like syntax.
+
+
+# instanceof operator:
+
+    -> It checks whether an object belongs to a particular constructor or class by verifying its prototype chain.
+
+    -> eg:
+            doctor instanceof Person;  //true

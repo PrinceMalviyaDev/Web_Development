@@ -30,3 +30,13 @@ class Doctor extends Person {
 
 let prince = new Engineer();
 let srishti = new Doctor();
+
+console.log(prince instanceof Engineer);  //True
+console.log(prince instanceof Person);  //True
+console.log(prince instanceof Doctor);  //false
+
+console.log(srishti instanceof Doctor);  //True
+console.log(srishti instanceof Person);  //True
+console.log(srishti instanceof Engineer);  //false
+
+console.log(prince instanceof Object);  //true
