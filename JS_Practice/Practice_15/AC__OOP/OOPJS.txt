@@ -87,3 +87,25 @@
 
     -> eg:
             doctor instanceof Person;  //true
+
+
+# Destructuring: 
+
+    -> Destructuring is a feature in JavaScript (introduced in ES6) that allows you to unpack values from arrays or properties from objects into individual variables in a concise and readable way.
+
+    -> It helps you avoid repetitive code like:
+
+        const a = arr[0];
+        const b = arr[1];
+
+            or
+
+        const name = user.name;
+        const age = user.age;
+
+
+    -> Instead, you extract values in a single structured operation.
+
+    -> eg:
+            const numbers = [10, 20, 30];
+            const [a, b, c] = numbers;
