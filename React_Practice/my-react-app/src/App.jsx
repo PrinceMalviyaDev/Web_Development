@@ -6,6 +6,7 @@ import Button from './Button/Button.jsx';
 import Student from './Student.jsx';
 import College from './College.jsx';
 import UserGreeting from './UserGreeting.jsx';
+import List from './List.jsx';
 
 // HOW TO STYLE REACT COMPONENTS WITH CSS
 // --------------------------------------
@@ -29,12 +30,38 @@ function App() {
   // }
 
   let colleges = ['IIT', 'IIM', 'MIT', 'NIT'];
+
+  const fruits = [{id: 1, name: "apple", calories: 52}, 
+                  {id: 2, name: "orange", calories: 47}, 
+                  {id: 3, name: "banana", calories: 89}, 
+                  {id: 4, name: "coconut", calories: 354}, 
+                  {id: 5, name: "pineaple", calories: 50}];
+
+  const vegetables = [{id: 6, name: "potatoes", calories: 110}, 
+                      {id: 7, name: "celery", calories: 15}, 
+                      {id: 8, name: "carrots", calories: 25}, 
+                      {id: 9, name: "corn", calories: 63}, 
+                      {id: 10, name: "broccoli", calories: 50}];
   
   return(
     <>
     <Header/>
     <UserGreeting isLoggedIn={false} username = "Prince"/>
     <Food/>
+    {/* {
+      (fruits.length > 0 ? <List items={fruits} category="Fruits"/> : null)
+    }
+    {
+      (vegetables.length > 0 ? <List items={vegetables} category="Vegetables"/> : null)
+    } */}
+
+    {
+      (fruits.length > 0) && <List items={fruits} category="Fruits"/>    // Short-Circuiting
+    }
+    {
+      (vegetables.length > 0) && <List items={vegetables} category="Vegetables"/>     // Short-Circuiting
+    }
+    
     <Student name="Prince" age={22} isStudent={true}/>    
     <Student name="Srishti" age={19} isStudent={true}/>   
     {/* <Student student={student}/>   */}
