@@ -12,12 +12,14 @@
 //              initialValue = the initial value of name (can be any data type)  
 
 import MyComponent from "./MyComponent";
+import Counter from "./Counter";
 
 function App() {
 
   return (
     <>
       <MyComponent/>
+      <Counter/>
     </>
   )
 }
