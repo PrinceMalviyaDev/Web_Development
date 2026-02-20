@@ -18,8 +18,23 @@ function Button(){
     //     <button style={styles}>Click me</button>
     // );
 
+    // const handleClick = () => console.log("Ouch!");
+
+    // let count = 0;
+
+    // const handleClick = (name) => {
+    //     if (count < 3){
+    //         count++;
+    //         console.log(`Ouch! ${name} has clicked the button ${count} times.`);
+    //     } else {
+    //         console.log(`Ouch! ${name} has clicked the button too many times!`);
+    //     }
+    // }
+
+    const handleClick = (e) => e.target.textContent = "Ouch!";
+
     return(
-        <button className={styles.button}>Click me</button>
+        <button onDoubleClick = {(e) => handleClick(e)} className={styles.button}>Click me</button>
     );
 }
 

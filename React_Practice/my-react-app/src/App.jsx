@@ -7,6 +7,7 @@ import Student from './Student.jsx';
 import College from './College.jsx';
 import UserGreeting from './UserGreeting.jsx';
 import List from './List.jsx';
+import ProfilePicture from './ProfilePicture.jsx';
 
 // HOW TO STYLE REACT COMPONENTS WITH CSS
 // --------------------------------------
@@ -48,6 +49,7 @@ function App() {
     <Header/>
     <UserGreeting isLoggedIn={false} username = "Prince"/>
     <Food/>
+    <ProfilePicture/>
     {/* {
       (fruits.length > 0 ? <List items={fruits} category="Fruits"/> : null)
     }
