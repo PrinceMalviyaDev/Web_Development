@@ -11,8 +11,9 @@
 //              setName = setter function to update the value of name in the virtual DOM
 //              initialValue = the initial value of name (can be any data type)  
 
-import MyComponent from "./MyComponent";
-import Counter from "./Counter";
+import MyComponent from "./MyComponent.jsx";
+import Counter from "./Counter.jsx";
+import OnChange from "./OnChange.jsx";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
     <>
       <MyComponent/>
       <Counter/>
+      <OnChange/>
     </>
   )
 }
