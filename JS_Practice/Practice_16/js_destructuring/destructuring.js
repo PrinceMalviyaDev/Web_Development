@@ -10,12 +10,12 @@ const arr2 = [1];
 const [e, f = 2] = arr2;
 console.log(e, f); // output: 1 2
 
-const arr3 = [1, 2, 3, 4, 5, 6];
+let arr3 = [1, 2, 3, 4, 5, 6];
 const [g, ...rest] = arr3;
 console.log(g, rest); // output: 1 [2, 3, 4, 5, 6]
 
-
-
+arr3 = (arr3 => [...arr3, 7])(arr3);
+console.log(arr3);
 
 const obj = {
     user: "Prince",
