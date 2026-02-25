@@ -14,11 +14,13 @@ import MyComponent from "./MyComponent.jsx";
 import Counter from "./Counter.jsx";
 import OnChange from "./OnChange.jsx";
 import ObjectUpdate from "./ObjectUpdate.jsx";
+import ArrayUpdate from "./ArrayUpdate.jsx";
 
 function App() {
 
   return (
     <>
+      <ArrayUpdate/>
       <ObjectUpdate/>
       <MyComponent/>
       <Counter/>
