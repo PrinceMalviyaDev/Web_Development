@@ -15,11 +15,13 @@ import Counter from "./Counter.jsx";
 import OnChange from "./OnChange.jsx";
 import ObjectUpdate from "./ObjectUpdate.jsx";
 import ArrayUpdate from "./ArrayUpdate.jsx";
+import ArrayofObjects from "./ArrayOfObjects.jsx";
 
 function App() {
 
   return (
     <>
+      <ArrayofObjects/>
       <ArrayUpdate/>
       <ObjectUpdate/>
       <MyComponent/>
