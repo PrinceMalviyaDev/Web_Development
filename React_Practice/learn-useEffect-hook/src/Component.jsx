@@ -10,9 +10,9 @@ function Component(){
     //     setWidth(window.innerWidth);
     //     setHeight(window.innerHeight);
     // }
-
+    
     useEffect(() => {
-        
+
         function handleResize(){
             setWidth(window.innerWidth);
             setHeight(window.innerHeight);
