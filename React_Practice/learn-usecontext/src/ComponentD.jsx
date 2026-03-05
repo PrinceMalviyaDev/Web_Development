@@ -1,4 +1,9 @@
-function ComponentD(props) {
+import {useContext} from 'react';
+import {UserContext} from './ComponentA.jsx';
+
+function ComponentD() {
+
+  const user = useContext(UserContext);
 
   return (
     <>
@@ -6,7 +11,7 @@ function ComponentD(props) {
             <h1>
                 ComponentD
             </h1>
-            <h2>{`Bye ${props.user}`}</h2>
+            <h2>{`Bye ${user}`}</h2>
         </div>
     </>
   );
