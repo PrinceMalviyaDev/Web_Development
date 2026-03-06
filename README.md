@@ -1,6 +1,6 @@
 # Web Development Practice 🚀
 
-A collection of small projects, website clones, and experiments created while learning **HTML, CSS, JavaScript, and modern frameworks**.  
+A collection of small projects, website clones, and experiments created while learning **HTML, CSS, JavaScript, and modern MERN frameworks**.  
 This repo is my personal playground to sharpen web development skills and track progress over time.  
 
 ---
