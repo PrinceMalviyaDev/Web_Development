@@ -2,6 +2,8 @@ import './App.css'
 import { Counter } from './components/Counter.tsx';
 import type { Chai } from "./types.ts";
 import { ChaiList } from './components/ChaiList.tsx';
+import { OrderForm } from './components/OrderForm.tsx';
+import { Card } from './components/Card.tsx';
 
 const menu: Chai[] = [
   {id: 1, name: "Masala", price: 40},
@@ -19,6 +21,17 @@ function App() {
       </div>
       <div>
         <Counter />
+      </div>
+      <div>
+        <OrderForm onSubmit={(order) => {
+          console.log("Placed:", order.name, order.cups);
+        }}/>
+      </div>
+      <div>
+        <Card
+        title="Chai aur TypeScript"
+        footer={<button>Order Now</button>}
+        ><p>Hello, I am a child</p></Card>
       </div>
     </>
   )
