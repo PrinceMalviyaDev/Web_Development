@@ -6,11 +6,12 @@ import AssetEditor from "./components/AssetEditor";
 import { type Asset } from "./types"
 import { portfolioReducer, type PortfolioState } from "./reducer/portfolioReducer";
 
-
 function App() {
+  
   const [state, dispatch] = useReducer(portfolioReducer, {
     assets: []
   } as PortfolioState);
+
 
   const addAsset = (asset: Asset) => {      // This function will be passed to AssetForm and called when a new asset is added
     dispatch({ type: "add", asset });   // Dispatch an "add" action to the reducer with the new asset
