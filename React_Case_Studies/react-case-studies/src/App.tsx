@@ -8,9 +8,7 @@ import { portfolioReducer, type PortfolioState } from "./reducer/portfolioReduce
 
 function App() {
   
-  const [state, dispatch] = useReducer(portfolioReducer, {
-    assets: []
-  } as PortfolioState);
+  const [state, dispatch] = useReducer(portfolioReducer, { assets: [] } as PortfolioState);
 
 
   const addAsset = (asset: Asset) => {      // This function will be passed to AssetForm and called when a new asset is added
